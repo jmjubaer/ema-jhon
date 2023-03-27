@@ -4,6 +4,7 @@ import icon from '../.././images/cart-plus.png'
 const Product = (props) => {
     // console.log(props.data);
     const {img:image,name,price,seller,ratings} = props.data;
+    const handleAddToCart = props.addToCart;
     return (
         <div>
             <div className="card card-compact w-auto bg-base-100 shadow-xl rounded-md overflow-hidden">
@@ -18,7 +19,7 @@ const Product = (props) => {
                         <p>Rating: {ratings} Star</p>
                     </div>
                 </div>
-                <button className="border-t-2 text-center p-3 bg-[#FFE0B3] flex justify-center">
+                <button onClick={() => handleAddToCart(props.data)} className="border-t-2 text-center p-3 bg-[#FFE0B3] flex justify-center">
                     <p>Add to Cart</p> 
                     <img src={icon} alt="" />
                     

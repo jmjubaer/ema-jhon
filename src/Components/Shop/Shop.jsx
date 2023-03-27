@@ -8,12 +8,15 @@ const Shop = () => {
         .then(res => res.json())
         .then(data => setProducts(data))
     },[])
+    const handleAddToCart = (product) =>{
+        console.log(product);
+    }
     return (
         <div className='grid grid-cols-5 jm-container'>
             <div className='col-span-4 my-24'>
                 <div className='grid grid-cols-3 gap-8 '>
                     {
-                        products.map((product)=> <Product key={product.id} data = {product}></Product>)
+                        products.map((product)=> <Product key={product.id} data = {product} addToCart={handleAddToCart}></Product>)
                     }
                 </div>
             </div>
