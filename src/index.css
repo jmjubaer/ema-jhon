@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.jm-container{
+  width: 1240px;
+  max-width: 96%;
+  margin: 0 auto;
+}
