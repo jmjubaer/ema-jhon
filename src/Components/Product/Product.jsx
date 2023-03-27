@@ -22,7 +22,6 @@ const Product = (props) => {
                 <button onClick={() => handleAddToCart(props.data)} className="border-t-2 text-center p-3 bg-[#FFE0B3] flex justify-center">
                     <p>Add to Cart</p> 
                     <img src={icon} alt="" />
-                    
                 </button>
             </div>
         </div>
