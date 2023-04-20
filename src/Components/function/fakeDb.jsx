@@ -25,8 +25,5 @@ const removeFormDb = id =>{
         localStorage.setItem('shoppingCart', JSON.stringify(storedCart));
     }
 }
-const removeCart = () =>{
-    localStorage.removeItem('shoppingCart');
-    location.reload();
-}
-export {addToCart,getStoredCart,removeCart,removeFormDb}
+
+export {addToCart,getStoredCart,removeFormDb}

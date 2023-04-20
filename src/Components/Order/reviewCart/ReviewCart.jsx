@@ -5,7 +5,7 @@ const ReviewCart = ({ product,handleRemoveCart }) => {
   console.log(product);
   const { img, name, price, shipping, quantity,id } = product;
   return (
-    <div className="p-3 pr-5 border rounded-md my-5 flex justify-between items-center">
+    <div className="p-3 pr-5 border rounded-md mb-5 flex justify-between items-center">
         <div className="flex gap-x-7">
             <img className="w-24 rounded-md" src={img} alt="" />
             <div className="">

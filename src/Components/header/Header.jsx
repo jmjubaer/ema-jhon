@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../.././images/Logo.svg';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 const Header = () => {
     return (
         <div className='bg-[#1C2B35]'>
@@ -12,10 +12,14 @@ const Header = () => {
                 </div>
                 <div className="flex-none">
                     <ul className="menu menu-horizontal px-1 text-white">
-                        <li><Link to='/'>Shope</Link></li>
-                        <li><Link to='/orders'>Order Review</Link></li>
-                        <li><Link to='/inventory'>Manage Inventory</Link></li>
-                        <li><Link to='/login'>Login</Link></li>
+                        <li><NavLink className={({ isActive }) => isActive ? "text-orange-500"
+                        : "" } to='/'>Shope</NavLink></li>
+                        <li><NavLink className={({ isActive }) => isActive ? "text-orange-500"
+                        : "" } to='/orders'>Order Review</NavLink></li>
+                        <li><NavLink className={({ isActive }) => isActive ? "text-orange-500"
+                        : "" } to='/inventory'>Manage Inventory</NavLink></li>
+                        <li><NavLink className={({ isActive }) => isActive ? "text-orange-500"
+                        : "" } to='/login'>Login</NavLink></li>
                     </ul>
                 </div>
             </div>
